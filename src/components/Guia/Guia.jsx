@@ -2,7 +2,7 @@ import React from 'react'
 
 function Guia() {
   return (
-    <div>Guia</div>
+    <div><h2>Guia</h2></div>
   )
 }
 
