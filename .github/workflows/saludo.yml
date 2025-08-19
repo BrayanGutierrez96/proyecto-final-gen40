@@ -19,7 +19,7 @@ jobs:
 
     steps:
       - name: Instala node en la version 22.1.0
-        uses: actions/setup-node@v4
+        # uses: actions/setup-node@v4
         with:
           node-version: "22.1.0"
 
