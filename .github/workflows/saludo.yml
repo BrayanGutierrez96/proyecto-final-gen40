@@ -27,4 +27,4 @@ jobs:
         run: echo "Hola te saludo desde la consola del servidor de github"
 
       - name: Mostrando variables de entorno
-        run: echo "Hola me muestro desde desarrollo 🚀 porque mi variable de entorno es %{{env.EVENTO_TRABAJO}}" 
+        run: echo "Hola me muestro desde desarrollo 🚀 porque mi variable de entorno es ${{env.EVENTO_TRABAJO}}" 
