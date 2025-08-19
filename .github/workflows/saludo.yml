@@ -16,12 +16,17 @@ jobs:
 
     env: 
       EVENTO_TRABAJO: prod
+      PASS_DB : ${{secrets.PASS_DB}}
+      USER_DB : ${{secrets.USER_DB}}
 
     steps:
       - name: Instala node en la version 22.1.0
-        # uses: actions/setup-node@v4
+        uses: actions/setup-node@v4
         with:
           node-version: "22.1.0"
+
+      - name: Clona el repositorio
+        uses: actions/checkout@v5
 
       - name: Mostrando saludo
         run: echo "Hola te saludo desde la consola del servidor de github"
@@ -33,3 +38,8 @@ jobs:
       - name: Mostrando variables de entorno
         if: ${{env.EVENTO_TRABAJO == 'prod'}} 
         run: echo "Hola me muestro desde producción 🚀" 
+
+      - name: Muestra las variables secretas
+        run : |
+          echo "Mi password es ${{env.PASS_DB}}"
+          echo "Mi usuario es ${{env.USER_DB}}"
