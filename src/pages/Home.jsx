@@ -1,8 +1,11 @@
 import React from 'react'
+import Referencias from '../components/Referencias/Referencias'
 
 function Home() {
   return (
-    <div>Home</div>
+    <div className='flex w-full h-screen justify-center items-center'>
+        <Referencias/>
+    </div>
   )
 }
 
