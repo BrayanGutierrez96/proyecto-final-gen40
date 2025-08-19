@@ -14,8 +14,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-  env: 
-    EVENTO_TRABAJO: dev 
+    env: 
+      EVENTO_TRABAJO: desarrollo
 
     steps:
       - name: Instala node en la version 22.1.0
