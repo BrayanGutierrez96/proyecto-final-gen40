@@ -1,0 +1,26 @@
+name: Pruebas
+
+on: 
+  push:
+    branches: [develop, main]
+    pull_request:
+      branches: [develop, main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clona el repositorio
+        uses: actions/checkout@v5
+
+      - name: Instala node v22.1.0
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22.1.0"
+
+      - name: Instala las dependencias
+        run: npm install
+
+      - name: Ejecuta los tests
+        run: npm run test

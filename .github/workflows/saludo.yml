@@ -41,5 +41,5 @@ jobs:
 
       - name: Muestra las variables secretas
         run : |
-          echo "Mi password es ${{env.PASS_DB}}"
+          echo "Mi password es ${{secrets.PASS_DB}}"
           echo "Mi usuario es ${{env.USER_DB}}"
