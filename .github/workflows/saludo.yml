@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env: 
-      EVENTO_TRABAJO: desarrollo
+      EVENTO_TRABAJO: prod
 
     steps:
       - name: Instala node en la version 22.1.0
@@ -27,4 +27,9 @@ jobs:
         run: echo "Hola te saludo desde la consola del servidor de github"
 
       - name: Mostrando variables de entorno
-        run: echo "Hola me muestro desde desarrollo 🚀 porque mi variable de entorno es ${{env.EVENTO_TRABAJO}}" 
+        if: ${{env.EVENTO_TRABAJO}} == 'dev'
+        run: echo "Hola me muestro desde desarrollo 🚀" 
+
+      - name: Mostrando variables de entorno
+        if: ${{env.EVENTO_TRABAJO}} == 'prod'
+        run: echo "Hola me muestro desde producción 🚀" 
