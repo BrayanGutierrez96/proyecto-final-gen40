@@ -15,12 +15,12 @@ jobs:
     runs-on: ubuntu-latest
 
   steps:
-   -  name: Instala node en la version 22.1.0
+    - name: Instala node en la version 22.1.0
       uses: actions/setup-node@v4
       with:
       node-version: "22.1.0"
 
-   -  name: Mostrando saludo
+    - name: Mostrando saludo
       run: echo "Hola te saludo desde la consola del servidor de github"
 
     
