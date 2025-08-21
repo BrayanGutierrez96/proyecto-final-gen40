@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <footer  className="bg-gradient-to-b from-[#1A1E26] to-[#01100B] w-full font-lexend text-base text-[#9D9EA2] px-8 py-12">
         <div className=" max-w-[1500px] mx-auto flex flex-col justify-between gap-12">
-            <section className="flex flex-row gap-120">
+            <section className="flex flex-col lg:flex-row gap-12 lg:gap-32 xl:gap-120">
                 {/* Logo y descripcion */}
                 <div className="max-w-[300px]"> 
                     <Link to="/">
@@ -23,7 +23,7 @@ const Footer = () => {
                 <div className="flex flex-col justify-between flex-wrap gap-12">
                     <div  className="flex flex-col gap-3 min-w-[150px]">
                         <h3 className="text-xl font-medium text-white">QUICK LINK</h3>
-                        <div className='flex flex-row gap-56 flex-wrap'>
+                        <div className='flex flex-col md:flex-row lg:flex-row gap-6 min-[770px]:gap-52 max-[px]:gap-47md:gap-20 lg:gap-32 2xl:gap-56 flex-wrap'>
                             <ul className="flex flex-col gap-2">
                                 <li>Track Your Order</li>
                                 <li>Shop All</li>
