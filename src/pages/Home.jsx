@@ -1,11 +1,13 @@
 import React from "react";
 import Referencias from "../components/Referencias/Referencias";
-import logoDevf from "../assets/logo-devf.png";
+import Acordion from "../components/Acordion/Acordion";
+
 
 function Home() {
   return (
-    <div className="flex w-full justify-center bg-[#ADB4FF]">
-      
+    <div className="flex w-full justify-center items-center h-screen bg-black text-white text-2xl ">
+      {/* <Referencias /> */}
+      <Acordion/>
     </div>
   );
 }

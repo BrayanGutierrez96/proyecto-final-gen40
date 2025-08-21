@@ -1,4 +1,5 @@
-import React from 'react'
+
+import logoDevf from "../assets/logo-devf.png";
 
 function CardsEjemplosTailwind() {
   return (
