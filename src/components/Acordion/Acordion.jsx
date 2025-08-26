@@ -16,6 +16,7 @@ function Acordion() {
       {abrir && (
         <p data-testid="contenedor-contenido" className="text-md font-normal">
           Lorem ipsum dolor sit amet.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid sapiente sit fugit temporibus quae hic odio praesentium eligendi laboriosam ad vel ab, itaque reprehenderit vitae voluptate, accusantium harum voluptatum iste.
         </p>
       )}
       <input type="text" placeholder="Escribe aquí tu texto" className="border py-1 px-2" />
