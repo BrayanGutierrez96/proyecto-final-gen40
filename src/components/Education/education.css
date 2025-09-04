@@ -1,6 +1,5 @@
 .education {
   padding: 2rem;
-  background-color: rgba(244, 244, 244, 1);
 }
 
 .education-header {
@@ -92,12 +91,23 @@
   transform: scale(1.1);
 }
 
+@media (max-width: 1220px) {
+  .education-header {
+    justify-content: center;
+    gap: 10px;
+}
+.education__education-header__link {
+  display: none;
+}
+}
+
 @media (max-width: 768px) {
   .article-container {
     grid-template-columns: 1fr;
     gap: 24px;
     padding: 20px;
   }
+
 }
 
 @media (max-width: 480px) {
