@@ -1,7 +1,10 @@
+import imagenReferencias from '../../assets/imagenReferencias.png';
+
 function Referencias() {
   return (
     <section
-      className={`left-1/2 transform -translate-x-1/2 absolute top-[-150px]  lg:top-[-170px] z-10 flex bg-[url(./imagenReferencias.png)] bg-no-repeat bg-center bg-cover flex-col lg:flex-row sm:justify-evenly lg:justify-between  justify-center items-center px-4 lg:px-20 rounded-3xl py-15 lg:py-30 gap-8 text-white w-[90%] mx-auto`}
+      className={`left-1/2 transform -translate-x-1/2 absolute top-[-150px]  lg:top-[-170px] z-10 flex bg-no-repeat bg-center bg-cover flex-col lg:flex-row sm:justify-evenly lg:justify-between  justify-center items-center px-4 lg:px-20 rounded-3xl py-15 lg:py-30 gap-8 text-white w-[90%] mx-auto`}
+      style={{ backgroundImage: `url(${imagenReferencias})` }}
     >
       <article className="flex flex-col items-center justify-center lg:justify-start lg:items-start select-none gap-6 sm:gap-8">
         <h2 className="text-3xl sm:text-4xl xl:text-6xl font-bold text-center ">
